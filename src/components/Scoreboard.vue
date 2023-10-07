@@ -165,7 +165,8 @@ function updateScore(player, row) {
 table {
     height: 100%;
     border-collapse: collapse;
-    border: 2px solid #99AA38
+    border: 2px solid #99AA38;
+    color: black;
 }
 
 td {
