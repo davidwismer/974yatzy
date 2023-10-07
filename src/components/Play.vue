@@ -1,6 +1,6 @@
 <template>
     <div class="playContainer">
-        <img class="backIcon" src="src/assets/back_icon.png" @click="$emit('backToAccueil')">
+        <img class="backIcon" src="/back_icon.png" @click="$emit('backToAccueil')">
         <div class="scoreboardContainer">
             <scoreboard :player-names="shortenNames" :players="props.players" @update-total-score="updateTotalScore">
             </scoreboard>
