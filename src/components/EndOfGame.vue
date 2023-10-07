@@ -80,6 +80,7 @@ function newGame() {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    overflow: hidden;
 }
 
 .title {
@@ -202,7 +203,7 @@ function newGame() {
 .newGameContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .newGame {
