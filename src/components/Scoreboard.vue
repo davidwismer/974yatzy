@@ -151,7 +151,7 @@ function updateScore(player, row) {
     allInputs.forEach(input => {
         if(isNaN(parseInt(input.value))){
             filled = false
-        }else {
+        }else if(!(input.classList[0] == "total-bonus")) {
             totalScore += parseInt(input.value)
         }
     })
