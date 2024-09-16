@@ -169,8 +169,13 @@ table {
     color: black;
 }
 
+table > :nth-child(2n){
+    background-color: #d8da71;
+}
+
 td {
     border: 1px solid #99AA38;
+    border-right: 2px solid #99AA38;
     padding: 0;
 }
 
@@ -179,8 +184,7 @@ td:not(.label) {
 }
 
 th {
-    border: 1px solid #99AA38;
-    border-bottom: 2px solid #99AA38;
+    border: 2px solid #99AA38;
     font-weight: 600;
 }
 
@@ -213,7 +217,7 @@ input {
     width: 100%;
     height: 100%;
     border: none;
-    background-color: #E1E289;
+    background-color: transparent;
     text-align: center;
 }
 
