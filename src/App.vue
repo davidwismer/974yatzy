@@ -60,7 +60,7 @@ function newGame() {
 
 <style scoped>
 main {
-  height: 100dvh;
+  height: 100%;
 }
 
 .componentContainer {
