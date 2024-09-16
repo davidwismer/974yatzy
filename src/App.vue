@@ -49,7 +49,9 @@ function newGame() {
   <main>
     <template v-for="(screen) of screens">
       <div v-show="screen.id == currentScreen" class="componentContainer">
-        <component :is="screen.component" @play="play" :players="players" :currentScreen="currentScreen" @updateTotalScore="updateTotalScore" @backToAccueil="currentScreen = 'accueil'" @endGame="endGame()" @newGame="newGame()">
+        <component :is="screen.component" @play="play" :players="players" :currentScreen="currentScreen"
+          @updateTotalScore="updateTotalScore" @backToAccueil="currentScreen = 'accueil'" @endGame="endGame()"
+          @newGame="newGame()">
         </component>
       </div>
     </template>
@@ -58,7 +60,7 @@ function newGame() {
 
 <style scoped>
 main {
-  height: 100%;
+  height: 100dvh;
 }
 
 .componentContainer {
