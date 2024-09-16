@@ -1,7 +1,9 @@
 <template>
     <div class="container">
         <span class="name">{{ props.playerName }}</span>
-        <button class="deletePlayer" @click="$emit('deletePlayer')">-</button>
+        <button class="deletePlayer" @click="$emit('deletePlayer')">
+            <div class="minusSymbol"></div>
+        </button>
     </div>
 </template>
 
@@ -18,6 +20,7 @@ const props = defineProps({
 .container {
     background-color: white;
     border-radius: 25px;
+    border: 2px white solid;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
@@ -26,15 +29,19 @@ const props = defineProps({
     font-size: 16px;
 }
 .deletePlayer {
-    color: white;
-    background-color: black;
+    background-color: transparent;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    font-size: 30px;
-    text-align: center;
-    line-height: 0;
-    padding: 0px 0px 5px 0px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minusSymbol{
+    background-color: rgb(211, 32, 32);
+    height: 4px;
+    width: 14px;
 }
 </style>

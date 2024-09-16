@@ -141,7 +141,7 @@ input[type=text]:focus {
     width: 50%;
     border-radius: 25px;
     border: none;
-    padding: 0 10px 5px 10px;
+    padding: 5px 10px;
     font-weight: 800;
     font-size: 28px;
     background-color: #0A210F;
