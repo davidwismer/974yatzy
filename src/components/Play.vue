@@ -69,13 +69,14 @@ function endGame(){
 }
 
 .showResults {
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 25px;
     border: none;
+    border-bottom: 2px solid black;
     padding: 5px 10px;
     font-weight: 600;
     font-size: 16px;
-    background-color: #0A210F;
+    background-color: #13411d;
     color: white;
 }
 .showResultsContainer {

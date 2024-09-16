@@ -209,10 +209,11 @@ function newGame() {
 .newGame {
     border-radius: 25px;
     border: none;
+    border-bottom: 3px solid black;
     padding: 5px 10px;
     font-weight: 600;
-    font-size: 20px;
-    background-color: #0A210F;
+    font-size: 24px;
+    background-color: #13411d;
     color: white;
 }
 

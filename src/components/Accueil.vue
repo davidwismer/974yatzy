@@ -141,15 +141,18 @@ input[type=text]:focus {
     width: 50%;
     border-radius: 25px;
     border: none;
+    border-bottom: 4px solid black;
     padding: 5px 10px;
     font-weight: 800;
     font-size: 28px;
-    background-color: #0A210F;
+    background-color: #13411d;
     color: white;
 }
 button.disabled {
-    transition: 0.3s;
+    transition: 0.3s opacity;
     opacity: 0.4;
+    border: none;
+    transform: translateY(4px);
 }
 .warning {
     color: red;
