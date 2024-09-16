@@ -1,6 +1,6 @@
 <template>
     <div class="accueilContainer">
-        <h1>Yatzy scoreboard</h1>
+        <h1>Yatzy 974</h1>
         <div class="playerSection">
             <div class="userField">
                 <input class="userField-input" type="text" placeholder="Ajouter un joueur">
@@ -13,7 +13,7 @@
         </div>
         <div class="playBtnContainer">
             <button class="playBtn" :class="{disabled: notEnoughPlayer}" @click="play()">Jouer</button>
-            <span class="warning" :class="{disabled: notEnoughPlayer}">Pas de joueurs</span>
+            <span class="warning" :class="{disabled: notEnoughPlayer}">Pas assez de joueurs</span>
         </div>
     </div>
 </template>
@@ -70,7 +70,7 @@ h1 {
 .playerSection {
     margin-top: 30px;
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +137,7 @@ input[type=text]:focus {
 }
 
 .playBtn {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 50%;
     border-radius: 25px;
     border: none;
@@ -148,13 +148,15 @@ input[type=text]:focus {
     color: white;
 }
 button.disabled {
+    transition: 0.3s;
     opacity: 0.4;
 }
 .warning {
     color: red;
-    display: none;
+    opacity: 0;
 }
-span.disabled {
-    display: block;
+.warning.disabled {
+    transition: 0.3s;
+    opacity: 1;
 }
 </style>
